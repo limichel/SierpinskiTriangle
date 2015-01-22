@@ -25,11 +25,18 @@ public void draw()
 	noStroke();
 	if(chooseColor%2 == 0)
 	{
-		fill(255, 182, 193, 100);
+		background(250, 235, 215);
+		fill(255, 182, 193, 150);
+	}
+	else if(chooseColor%3 == 0)
+	{
+		background(230, 230, 250);
+		fill(176, 196, 222, 150);
 	}
 	else
 	{
-		fill(255);
+		background(224, 255, 218);
+		fill(152, 251, 152, 150);
 	}
 	sierpinski(0, height, width);
 }
